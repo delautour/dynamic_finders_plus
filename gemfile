@@ -1,0 +1,8 @@
+source 'https://rubygems.org'
+
+# Specify your gem's dependencies in activemodel_warnings.gemspec
+gemspec
+
+group :development do
+  gem 'activerecord', :require => "active_record"
+end
