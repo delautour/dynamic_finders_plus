@@ -22,6 +22,7 @@ module DynamicFindersPlus
 
     def self.define_for klass
       return nil unless defined.add? klass
+      return if klass.abstract_class
 
       results = {}
       klass.columns.each do |column|
