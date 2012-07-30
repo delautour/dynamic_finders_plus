@@ -3,7 +3,7 @@ require File.expand_path('../lib/dynamic_finders_plus/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Courtney de Lautour"]
-  gem.email         = ["tony@thefrontiergroup.com.au"]
+  gem.email         = ["clautour@thefrontiergroup.com.au"]
   gem.description   = %q{Adds a number of extra dynamic finders to active record models}
   gem.summary       = %q{Adds a number of extra dynamic finders to active record models}
   gem.homepage      = ""
