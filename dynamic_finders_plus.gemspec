@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["clautour@thefrontiergroup.com.au"]
   gem.description   = %q{Adds a number of extra dynamic finders to active record models}
   gem.summary       = %q{Adds a number of extra dynamic finders to active record models}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/Amerdrix/dynamic_finders_plus"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
