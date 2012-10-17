@@ -20,8 +20,8 @@ module ActiveRecord
   class Relation
     alias a39c8f8aecf84ae4a83e86415d111cc8 method_missing
     def method_missing name, *args, &block
-      if (new_methods = DynamicFindersPlus::Finder.define_for @klass) && (method = new_methods[name])
-        method.call *args, &block
+      if (new_methods = DynamicFindersPlus::Finder.define_for @klass) && new_methods[name]
+        self.send(name, *args, &block)
       else
         a39c8f8aecf84ae4a83e86415d111cc8 name, *args, &block
       end

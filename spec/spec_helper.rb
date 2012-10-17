@@ -22,7 +22,6 @@ class SimpleModel < ActiveRecord::Base
 end
 
 
-
 RSpec.configure do |config|
   config.before(:all) do
 
